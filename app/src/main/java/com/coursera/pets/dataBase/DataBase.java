@@ -25,7 +25,7 @@ public class DataBase extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase database) {
         String queryCreateTablePets = "CREATE TABLE " + ConstantsDataBase.TABLE_PETS + "(" +
                                     ConstantsDataBase.TABLE_PETS_ID     + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                                    ConstantsDataBase.TABLE_PETS_NAME   + " TEXT," +
+                                    ConstantsDataBase.TABLE_PETS_NAME   + " TEXT, " +
                                     ConstantsDataBase.TABLE_PETS_FOTO   + " INTEGER" +
                                     ")";
 
@@ -48,7 +48,7 @@ public class DataBase extends SQLiteOpenHelper{
     }
 
     public ArrayList<Pet> getAllPets(){
-        ArrayList<Pet> pets = new ArrayList<Pet>();
+        ArrayList<Pet> pets = new ArrayList<>();
 
         String query = "SELECT * FROM " + ConstantsDataBase.TABLE_PETS;
         SQLiteDatabase database = this.getWritableDatabase();
@@ -66,7 +66,6 @@ public class DataBase extends SQLiteOpenHelper{
 
             Cursor registersRating = database.rawQuery(queryRating, null);
 
-            //petsActual.setTvRating(registersRating.getInt(0));
             if (registersRating.moveToNext()){
                 petsActual.setTvRating(registersRating.getInt(0));
             }else{

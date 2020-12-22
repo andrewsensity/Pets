@@ -1,6 +1,8 @@
 package com.coursera.pets.adapters;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +13,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.coursera.pets.FavoritesPets;
+import com.coursera.pets.MainActivity;
 import com.coursera.pets.R;
 import com.coursera.pets.dataBase.ConstructorPets;
 import com.coursera.pets.pojo.Pet;
 
 import java.util.ArrayList;
+
+import static androidx.core.content.ContextCompat.startActivity;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>{
 
@@ -26,6 +32,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>{
 
     ArrayList<Pet> pets;
     Activity activity;
+    Context context;
 
     @NonNull
     @Override
@@ -39,6 +46,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>{
         Pet pet = pets.get(position);
         holder.ivPet.setImageResource(pet.getIvPet());
         holder.tvName.setText(String.valueOf(pet.getTvName()));
+        holder.tvRating.setText(String.valueOf(pet.getTvRating()));
 
         holder.ivBoneWhite.setOnClickListener(new View.OnClickListener() {
             @Override
