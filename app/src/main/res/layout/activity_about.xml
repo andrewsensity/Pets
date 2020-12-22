@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="@dimen/textSizeBio"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developer Software "
+        android:textSize="@dimen/textSizeBio2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Developer: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Carlos Andres Echavarria"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="City: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Medellin - Antioquia"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Subject: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Android Developer Apps"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Teacher: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Anahi Salgado"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="University: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="UNAM"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Year: "
+            android:textSize="@dimen/textSizeBioName"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="2020"
+            android:textSize="@dimen/textSizeBioName"
+            android:gravity="left"
+            android:layout_marginTop="20dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pets</string>
+    <string name="menuAbout">About</string>
+    <string name="menuContact">Contact</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="messageContact">Send us your information and we will be communicating with you</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Aqui van los detalles</string>
+    <string name="pLikes">0</string>
+</resources>

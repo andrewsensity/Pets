@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cornerCardView">10dp</dimen>
+    <dimen name="cardviewElevation">4dp</dimen>
+    <dimen name="heightImageCardView">205dp</dimen>
+    <dimen name="heightCardView">270dp</dimen>
+    <dimen name="textSizeCardView">30dp</dimen>
+    <dimen name="marginTV">20dp</dimen>
+    <dimen name="dimenIconBones">40dp</dimen>
+    <dimen name="sizeIconCamera">20dp</dimen>
+    <dimen name="sizeFAB">40dp</dimen>
+    <dimen name="fabElevation">6dp</dimen>
+    <dimen name="toolbarElevation">4dp</dimen>
+    <dimen name="heightFootprint">40dp</dimen>
+    <dimen name="marginFAB">30dp</dimen>
+    <dimen name="textSizeContact">50sp</dimen>
+    <dimen name="textSizeMessageContact">30sp</dimen>
+    <dimen name="textSizeBio">50sp</dimen>
+    <dimen name="textSizeBioName">20dp</dimen>
+    <dimen name="textSizeBio2">40dp</dimen>
+    <dimen name="textSizePet">30dp</dimen>
+</resources>

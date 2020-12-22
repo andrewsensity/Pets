@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heightCardView"
+    android:layout_margin="20dp"
+    android:elevation="@dimen/cardviewElevation"
+    app:cardCornerRadius="@dimen/cornerCardView">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightImageCardView"
+            android:src="@drawable/horse"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="2"
+            android:background="@color/white">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivBoneWhite"
+                        android:layout_width="@dimen/dimenIconBones"
+                        android:layout_height="@dimen/dimenIconBones"
+                        android:src="@drawable/bone_white"
+                        android:layout_marginStart="5dp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arya"
+                        android:textSize="@dimen/textSizeCardView"
+                        android:fontFamily="cursive"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/marginTV"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="end">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pLikes"
+                    android:textSize="@dimen/textSizeCardView"
+                    android:layout_marginEnd="@dimen/marginTV"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBoneOrange"
+                    android:layout_width="@dimen/dimenIconBones"
+                    android:layout_height="@dimen/dimenIconBones"
+                    android:src="@drawable/bone_orange"
+                    android:layout_marginEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
